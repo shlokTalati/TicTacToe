@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-dark" id="content">
+  <div class="container">
+    <h1 class="text-center bg-dark text-white pt-3 m-0 border-bottom resultAnimate" id="header"> Tic Tac Toe</h1>
+  </div>
+  <div id="game" class="container-fluid">
+    <div class="grid">
+      <button class="btn m-1 btn-outline-light" id="btn1" onclick="check(0); animateBtn(0)"></button>
+      <button class="btn m-1 btn-outline-light" id="btn2" onclick="check(1); animateBtn(1)"></button>
+      <button class="btn m-1 btn-outline-light" id="btn3" onclick="check(2); animateBtn(2)"></button>
+      <button class="btn m-1 btn-outline-light" id="btn4" onclick="check(3); animateBtn(3)"></button>
+      <button class="btn m-1 btn-outline-light" id="btn5" onclick="check(4); animateBtn(4)"></button>
+      <button class="btn m-1 btn-outline-light" id="btn6" onclick="check(5); animateBtn(5)"></button>
+      <button class="btn m-1 btn-outline-light" id="btn7" onclick="check(6); animateBtn(6)"></button>
+      <button class="btn m-1 btn-outline-light" id="btn8" onclick="check(7); animateBtn(7)"></button>
+      <button class="btn m-1 btn-outline-light" id="btn9" onclick="check(8); animateBtn(8)"></button>
+
+    </div>
+  </div>
+
+
+  <div class="container" id="resultContainer">
+    <div id="result"> &nbsp;</div>
+    <button class="btn btn-success" id="resetGame" onclick="resetGame()">Reset Game</button>
+  </div>
+
+
+
+
+  <footer class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-4 mt-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap" />
+        </svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-light">&copy; 2022 <a href="https://www.linkedin.com/in/shlok-talati-124008218/"
+          class="text-light" target="_blank"> Shlok Talati </a></span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a href="https://github.com/shlokTalati" target="_blank"><img src="img/Github/github-mark-white.png" class="bi"
+            width="24" height="24" alt="Facebook"></a></li>
+      <li class="ms-3"><a href="#" target="_blank"><img src="img/Instagram/logo-instagram.png" class="bi" width="24"
+            height="24" alt="Instagram"></a></li>
+      <li class="ms-3"><a href="https://www.linkedin.com/in/shlok-talati-124008218/" target="_blank"><img
+            src="img/LinkedIn/LI-In-Bug.png" class="bi" width="24" height="24" alt="Twitter"></a></li>
+      <li><a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap" />
+          </svg>
+        </a></li>
+    </ul>
+  </footer>
+  </div>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

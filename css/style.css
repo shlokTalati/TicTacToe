@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+
+/* body{
+    min-height: 100vh;
+} */
+/* footer{
+    position: sticky;
+    bottom: 0;
+} */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    width: 110px;
+    height: 110px;
+    font-size: 100px;
+}
+#header{
+    font-size: 100px;
+}
+
+#game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5em 0rem 2rem 0rem;    
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.gameBtnAnimate{
+    animation-name: font-grow;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+@keyframes font-grow {
+    from{
+        font-size: 0px;
+    }
+    to{
+        font-size: 40px;
+    }
+}
+@keyframes font-show {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.resultAnimate{
+    animation-name: font-show;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+}
+#result{
+    text-align: center;
+    font-size: 40px;
+}
+
+#resultContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#resetGame{
+    margin-top: 20px;
+    height: 50px;
+    width: fit-content;
+}
